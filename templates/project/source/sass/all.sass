@@ -1,0 +1,43 @@
+/*
+ * 作者: Jerry Hung
+ */
+
+/*
+ *
+ * CSS for 農業科技博物館
+ *
+ * Table of Contents
+ * -----------------------------
+ * 1.  - Reset CSS
+ * 2.  - Global CSS
+ * 3.  - Layout CSS
+ * 4.  - Page CSS
+ * 5. - Icons CSS
+ *
+ */
+
+// vertical rhythm
+$base-font-size: 16px
+$base-line-height: 24px
+$relative-font-sizing: false
+
+// compass
+$legacy-support-for-ie: false
+
+// class variable
+$page-container: ".container"
+
+@import "compass"
+@import "susy"
+@import "mixin"
+@import "variable"
+@import "core/css3"
+
+// import all things
+//1.  - Reset CSS
+@import "partials/reset"
+@import "susy_layout" 
+//2.  - Global CSS
+@import "partials/global"
+//3.  - Layout CSS
+@import "partials/layout"
