@@ -1,2 +1,29 @@
 body
-	background: url(..images/bg.jpg)
+  background: url(../images/bg.jpg)
+
+.nav
+  background: $navColor
+  height: 45px
+  .main_menu
+    width: 819px
+    margin: 0 auto
+    ul
+      +pie-clearfix
+    li
+      width: 117px
+      float: left
+
+//CSS Sprite
+@import "compass/utilities/sprites"
+@import "mainmenu/*.png"
++ all-my-icons-sprites
+
+[class^="menu_"] a
+  display: block
+  height: 45px
+  @extend .mainmenu-sprite
+@for $i from 0 through 6
+  .menu_0#{$i+1} a
+    background-position: -117px*$i top
+  .menu_0#{$i+1} a:hover
+    background-position: -117px*$i bottom

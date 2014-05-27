@@ -1,4 +1,13 @@
 .wrapper
-  h1 OK GO!!!
-  - 3.times do
-    p= zh_lorem_paragraphs 5
+  .header
+.nav
+  .main_menu
+    ul
+      -(1..6).each do |n|
+        li class="menu_0#{n}": a href="javascript:;" 0#{n}
+.wrapper
+  .container
+    .main
+      .left_block
+      .right_block
+  .footer
