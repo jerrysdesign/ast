@@ -1,3 +1,4 @@
 psd/*
 templates/project/source/.sass-cache/**/*
 templates/project/source/stylesheets/*
+templates/project/source/fire_app_log.txt
