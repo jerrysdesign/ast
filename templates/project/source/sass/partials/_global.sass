@@ -6,6 +6,20 @@
  */
 body
   background: url(../images/bg.jpg)
+  font-size: 13px
+  line-height: 1.5
+  color: $bodyTextColor
+a
+  color: $mariner
+.logo
+  position: absolute
+  width: 360px
+  height: 117px
+  margin: auto
+  top: 0
+  right: 0
+  left: 0
+  bottom: 0  
 /* 主選單 */
 .nav
   background: $navColor
@@ -34,3 +48,90 @@ body
     background-position: -117px*$i top
   .menu_0#{$i+1} a:hover
     background-position: -117px*$i bottom
+//
+//index
+.title_01
+  background: url(../images/title_01.png)
+.title_02
+  background: url(../images/title_02.png)
+.title_03
+  background: url(../images/title_03.png)
+.title_01,.title_02,.title_03
+  height: 30px
+  margin-bottom: 10px
+  background-repeat: no-repeat
+  +ir
+.main
+  .left_block
+  .right_block
+    .section
+      p
+        height: 78px
+        overflow: hidden
+      .more
+        display: block
+        float: right
+    .section + .section
+      margin-top: 20px
+/* 檢索 */
+@mixin f_e
+  border-radius: 5px
+  padding: 5px 10px
+  line-height: 17px
+  height: 27px
+.seach_block
+  .inner
+    padding: 10px
+  input[type="text"], select
+    +f_e
+    border-style: solid
+    border-width: 1px
+    border-color: rgb( 185, 186, 63 )
+  button
+    +reset-box-model
+    +f_e
+    text-align: center
+    vertical-align: middle
+    color: white
+  select, button
+    margin-left: 5px
+    cursor: pointer
+.inline
+  +pie-clearfix
+  width: 100%
+  h5, label, ul, li, label
+    display: block
+    float: left
+.inline + .inline
+  margin-top: 5px
+.inline
+  li, li + li
+    margin-left: 5px
+/* tab */
+.tab
+  .tab_head
+    // background: url(../images/tab_bg.png) no-repeat 245px bottom
+    border-bottom: 1px solid $wasabi
+    height: 50px
+    margin-top: -50px
+    li
+      font-size: 15px
+      float: left
+      cursor: pointer
+      padding: 18px 10px 0 15px
+      line-height: 32px
+      color: $tabHeaderLink
+      overflow: hidden
+      &:hover, &.active
+        color: $tabHeaderActive
+      &.active
+        display: block
+        background: url(../images/tab_bg.png) no-repeat left bottom
+    li:first-child
+      margin-left: 260px
+  .tab_container
+    width: 100%
+  .tab_content
+    padding: 15px
+    border-top: 0px
+    display: none

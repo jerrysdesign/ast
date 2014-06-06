@@ -11,5 +11,46 @@
   .container
     .main
       .left_block
+        .section
+          h3.title_01 數位典藏
+          .section_01
+            a href="javascript:;"
+              img src="images/crop.png" alt="作物種原館"
+          .section_02
+            a href="javascript:;"
+              img src="images/insect_specimens.png" alt="昆蟲標本館"
+          .section_03
+            a href="javascript:;"
+              img src="images/research.png" alt="研究成果典藏館"
       .right_block
+        .section
+          h3.title_02 農業Story
+          .section_banner
+            img src="images/prunus_banner.jpg"
+          p
+            | 桃(Prunus persica (L.) Batsch.)為薔薇科(Rosaceae)重要果樹，起源於中國大陸，是世界上第六大果樹產業，次於柑桔、葡萄、香蕉、蘋果和梨，栽培面積175萬公頃，年產量約為1320萬公噸，是廣受消費大眾歡迎的水果。桃經過長久的自然演進，演化出豐富的遺傳多樣性，經過人為的選拔，形成眾多的品種和類型，已知的品種超過3000種，農試所羅娜種原保存園保存桃品種300餘種，涵蓋豐富的基因多樣性，在樹形方面有矮性基因(壽星桃等)、垂枝性基因(垂枝桃等)、直立性基因(帚桃等)；在花色方面有粉紅色(鶯歌桃等)、紅色(紅碧桃)、白色(白碧桃)；在花形方面有單瓣(苦桃等)及重瓣(碧桃等)；果形有圓桃(白鳳等)、油桃(Sunblaze等)、蟠桃(UFO等)；果色有白色(川中島白桃等)、紅色(天津水蜜)及黃色(Safari等)；果肉形態有溶質(中津白桃等)、非溶質(錦A等)及硬肉(鶯歌桃等)。在抗病蟲害基因方面，苦桃具有抗線蟲基因，TropicBeauty等具有抗細菌穿孔病之基因，這些基因是生物基因工程的寶貴原料。桃果實除了果形、果色的差異外，風味也不相同，有的甜如蜜、有的甜中有酸、各擅勝場，其成熟期在5-8月的盛暑時節，每到夏天鮮桃成熟，總為台灣水果市場增添不少風采。
+            a href="javascript:;" more
+        .section.seach_block
+          h3.title_03
+          .inner
+            .tab
+              ul.tab_head
+                li.active rel="tabSearch"  簡易查詢
+                li rel="tabAdvSearch"  進階查詢
+              .tab_container
+                #tabSearch.tab_content
+                  = render "partials/index_search"
+                #tabAdvSearch.tab_content
+                  /! 進階查詢
+
   .footer
+    .footer_inner
+      ul
+        li 更新日期：2014/05/02
+        li 瀏覽人數：821人次(自2013年11月)
+      ul
+        li 服務時間：AM8:00~PM5:00
+        li 地址：41362 台中市霧峰區萬豐里中正路189號
+        li 電話：04-23302301
+        li 傳真：04-23338162 
+      p 行政院農業委員會農業試驗所版權所有 © 2014 TARI All Rights Reserved

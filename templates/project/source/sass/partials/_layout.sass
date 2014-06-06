@@ -5,16 +5,23 @@
   background: url(../images/header_bg.png)
   height: 130px
   position: relative
+.main
+  padding: 30px 0
+  .left_block
+    +span-columns(6)
+  .right_block
+    +span-columns(6 omega)
 .footer
   background: url(../images/footer_bg.png) bottom center no-repeat
   height: 98px
   border-bottom: 2px solid $paleOyster
-.logo
-  position: absolute
-  width: 360px
-  height: 117px
-  margin: auto
-  top: 0
-  right: 0
-  left: 0
-  bottom: 0
+  font-size: 12px
+  color: $footerTextColor
+.footer_inner
+  width: 530px
+  margin: 20px auto
+  text-align: center
+  li
+    display: inline-block
+    margin: 0 5px
+  li + li
