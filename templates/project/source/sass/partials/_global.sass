@@ -61,15 +61,15 @@ a
 @import "mainmenu/*.png"
 + all-my-icons-sprites
 //
-[class^="menu_"] a
+[class^="menu_"]
   display: block
   height: 45px
   +ir
   @extend .mainmenu-sprite
 @for $i from 0 through 6
-  .menu_0#{$i+1} a
+  .menu_0#{$i+1}
     background-position: -117px*$i top
-  .menu_0#{$i+1} a:hover
+  .menu_0#{$i+1}:hover
     background-position: -117px*$i bottom
 //
 //index
