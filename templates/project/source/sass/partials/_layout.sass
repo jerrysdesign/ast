@@ -1,12 +1,14 @@
-.wrapper
-  width: 960px
-  margin: 0 auto
+/*  
+ Layout
+ */
 .header
   background: url(../images/header_bg.png)
   height: 130px
   position: relative
 .main
   padding: 30px 0
+  +pie-clearfix
+  /* index_layout */
   .left_block
     +span-columns(6)
   .right_block
@@ -25,3 +27,17 @@
     display: inline-block
     margin: 0 5px
   li + li
+
+/* p1 */
+.p1
+  .page_header
+    .title
+      +size(225px 61px)
+      float: left
+    p
+      margin-left: 235px
+  .box
+    $gutter-width: 6px
+    +span-columns(3)
+    &:last-child
+      margin-right: 0

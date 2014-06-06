@@ -45,3 +45,7 @@ a img {
   @include reset-image-anchor-border;
 }
 @include reset-html5;
+// add custom reset
+img {
+  max-width: 100%;
+}
