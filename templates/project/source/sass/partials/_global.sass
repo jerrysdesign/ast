@@ -20,6 +20,29 @@ a
   right: 0
   left: 0
   bottom: 0  
+.topnav
+  position: absolute
+  right: 0
+  bottom: 0
+  +size(215px 26px)
+  [class^="icon_"]
+    background-repeat: no-repeat
+    background-position: left
+  .icon_home
+    background-image: url(../images/icon_home.png)
+  .icon_sitemap
+    background-image: url(../images/icon_sitemap.png)
+  .icon_mail
+    background-image: url(../images/icon_mail.png)
+  li
+    float: left
+    a
+      display: block
+      padding-left: 20px
+      color: $topnav
+      text-decoration: none
+  li + li
+    margin-left: 15px
 /* 主選單 */
 .nav
   background: $navColor
