@@ -65,12 +65,16 @@ a
   .left_block
   .right_block
     .section
+      +pie-clearfix
       p
-        height: 78px
+        +size (394px 78px)
         overflow: hidden
-      .more
+      .icon_more
+        @extend %ir
         display: block
-        float: right
+        background: url(../images/more.png)
+        +size(43px)
+        margin-top: 30px
     .section + .section
       margin-top: 20px
 /* 檢索 */
