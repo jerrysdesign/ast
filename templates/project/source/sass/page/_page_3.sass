@@ -1,0 +1,24 @@
+/*! Page 3 */
+.p3
+  .page_header
+    .title
+      @extend %ir
+      background-image: url(../images/p3_title.png)
+      +size(176px 42px)
+      // margin-top: -20px
+  .mian
+    padding: 10px
+    background: #fff
+    +clearfix
+  //以下先與p2共用,需再整理出來  
+  a.box
+    background: #fff
+    padding: 8px
+    text-decoration: none
+    @extend %hoverbox
+    h3
+      text-align: center
+      font-size: 15px
+      color: nth($linkColor,2)
+      text-weight: bold
+      padding: 3px
