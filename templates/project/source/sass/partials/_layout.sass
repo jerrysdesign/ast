@@ -41,7 +41,7 @@
     +span-columns(3)
     &:last-child
       margin-right: 0
-/* p2 */
+/* p2, p3 */
 .p2,.p3
   .tab_head
     li
@@ -53,4 +53,19 @@
     $total-columns: 10
     +span-columns(2)
     &:nth-child(5n)
+      margin-right: 0
+/* p2 */
+.p4
+  .left-col
+    $total-columns: 10
+    $gutter-width: 10px
+    +span-columns(2)
+  .right-col
+    +span-columns(8)
+    margin-right: 0
+  .box
+    $gutter-width: 5px
+    $total-columns: 8
+    +span-columns(2)
+    &:nth-child(4n)
       margin-right: 0

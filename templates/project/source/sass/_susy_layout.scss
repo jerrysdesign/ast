@@ -66,9 +66,10 @@ $grid-padding   : 10px;
 }
 .row {
   @include grid-row;
+  @include clearfix;
 }
 .container > .row {
-  margin: 0;
+  margin: -10px 0 10px 0;
 }
 .column {
   @include grid-column;

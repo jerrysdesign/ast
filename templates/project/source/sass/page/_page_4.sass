@@ -1,5 +1,5 @@
-/*! Page 3 */
-.p3
+/*! Page 4 */
+.p4
   .page_header
     .title
       @extend %ir
@@ -11,14 +11,19 @@
     background: #fff
     +clearfix
   //以下先與p2共用,需再整理出來  
+  .left-col
+    .title
+      font-size: 24px
+      font-family: serif
+      background-image: url(../images/p4_main_h3bg.png)
+      background-repeat: no-repeat
+      padding: 0 5px
+      margin-bottom: 5px
+
   a.box
     background: #fff
     padding: 5px
     text-decoration: none
     @extend %hoverbox
-    h3
-      text-align: center
-      font-size: 15px
+    h4
       color: nth($linkColor,2)
-      text-weight: bold
-      padding: 3px
