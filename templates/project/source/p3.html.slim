@@ -1,0 +1,35 @@
+/! 主選單
+.nav
+  .main_menu
+    ul
+      / -(1..7).each do |n|
+      /   li class="menu_0#{n}": a href="javascript:;" 0#{n}
+      = nav_link_to("關於我們", "javascript:;",:class => "menu_01")
+      = nav_link_to("最新消息", "javascript:;",:class => "menu_02")
+      = nav_link_to("作物種原", "p1.html",:class => "menu_03")
+      = nav_link_to("昆從標本", "p3",:class => "menu_04 active")
+      = nav_link_to("研究成果", "javascript:;",:class => "menu_05")
+      = nav_link_to("生活百科", "javascript:;",:class => "menu_06")
+      = nav_link_to("整合查詢", "javascript:;",:class => "menu_07")
+/! /.nav
+.wrapper
+  = render  "partials/page_mainsearch"
+  .container.p2
+    .page_header
+      h1.title 作物種原館
+    .mian
+      .tab
+        ul.tab_head
+          li.active rel="tabCon_01" 糧食作物
+          li rel="tabCon_02" 果樹
+          li rel="tabCon_03" 蔬菜
+          li rel="tabCon_04" 要用作物
+        .tab_container
+          #tabCon_01.tab_content
+            - 10.times do
+              a.box href="javascript;;"
+                img src="http://placehold.it/400x300"
+                h3 = zh_lorem_name
+          #tabCon_02.tab_content
+          #tabCon_03.tab_content
+          #tabCon_04.tab_content
