@@ -6,20 +6,21 @@
       /   li class="menu_0#{n}": a href="javascript:;" 0#{n}
       = nav_link_to("關於我們", "javascript:;",:class => "menu_01")
       = nav_link_to("最新消息", "javascript:;",:class => "menu_02")
-      = nav_link_to("作物種原", "p1.html",:class => "menu_03 active")
-      = nav_link_to("昆從標本", "p3",:class => "menu_04")
+      = nav_link_to("作物種原", "p1.html",:class => "menu_03")
+      = nav_link_to("昆從標本", "p3",:class => "menu_04 active")
       = nav_link_to("研究成果", "javascript:;",:class => "menu_05")
       = nav_link_to("生活百科", "javascript:;",:class => "menu_06")
       = nav_link_to("整合查詢", "javascript:;",:class => "menu_07")
 /! /.nav
 .wrapper
   = render  "partials/page_mainsearch"
-  .container.p4
+  .container.p5
     .page_header
       ul.breadcrumb
         li: h1.title 作物種原館
-        li 果樹
-        li 梨
+        li 目科瀏覽
+        li 膜翅目
+        li 蜜蜂科
     .row
       = render "partials/search_pagination"
       .result_stats
@@ -27,14 +28,8 @@
         span 99
         | 筆資料
     .mian
-      .left-col
-        h3.title 梨
-        p =zh_lorem_paragraphs 3
-      .right-col
-        - 8.times do
-          a.box href="javascript:;"
-            img src="http://placehold.it/400x300"
-            h4 中文名:梨
-            h4 品種（系）名:越後錦
-            h4 來源:果樹種原標本數位化
-
+      - 10.times do
+        a.box href="javascript:;"
+          img src="http://placehold.it/400x300"
+          h4 學名：Bombus (Melanobombus)rufofasciatus Smith, 1852
+          h4 來源：昆蟲標本館
