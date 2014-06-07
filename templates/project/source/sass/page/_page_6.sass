@@ -116,20 +116,34 @@
   color: #333
   th, td
     padding: 2px 5px
-    border: 1px solid #cba279
+    border: 1px solid nth($table01, 2)
   th
     width: 146px
     text-align: right
-    background: #f2ede8
-    color: #b27940
-  td
-    border: 1px solid #cba279
+    background: nth($table01, 3)
+    color: nth($table01, 1)
   tr:hover
     th
-      background: #e8dbcb
+      background: nth($table01, 4)
     td
-      background: #f2ede8
-  
+      background: nth($table01, 5)
+
+.table_02
+  background: #fff
+  color: #333
+  th, td
+    padding: 2px 5px
+    border: 1px solid nth($table02, 2)
+  th
+    width: 146px
+    text-align: right
+    background: nth($table02, 3)
+    color: nth($table02, 1)
+  tr:hover
+    th
+      background: nth($table02, 4)
+    td
+      background: nth($table02, 5)
 /* */
 .p6
   .tab
