@@ -1,2 +1,20 @@
-// Page 1
-@import "page_1/partial1"
+/*! Page 1 */
+.p1
+  .page_header
+    clear: both
+    padding: 10px 0 30px
+    .title
+      @extend %ir
+      background-image: url(../images/p1_title.png)
+      +size(225px 61px)
+  a.box
+    background: #fff
+    padding: 8px
+    text-decoration: none
+    @extend %hoverbox
+    h3
+      text-align: center
+      font-size: 15px
+      color: nth($linkColor,2)
+      text-weight: bold
+      padding: 3px
