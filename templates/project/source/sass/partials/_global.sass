@@ -113,7 +113,7 @@ a
     +f_e
     border-style: solid
     border-width: 1px
-    border-color: rgb( 185, 186, 63 )
+    border-color: $earlsGreen
   button
     +reset-box-model
     +f_e
@@ -167,22 +167,9 @@ a
   @extend %right
   padding-top: 10px
 /* */
-.p1
-  .page_header
-    clear: both
-    padding: 10px 0 30px
-    .title
-      @extend %ir
-      background-image: url(../images/p1_title.png)
-      +size(225px 61px)
-  a.box
-    background: #fff
-    padding: 8px
-    text-decoration: none
-    h3
-      text-align: center
-      font-size: 15px
-      color: nth($linkColor,2)
-      text-weight: bold
-      padding: 3px
+%hoverbox, .hoverbox
+  border: 1px solid #fff
+  &:hover
+    border: 1px solid $earlsGreen
+
       
