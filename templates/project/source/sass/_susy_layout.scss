@@ -1,9 +1,9 @@
 /*  
-	GRID SYSTEM
+  GRID SYSTEM
 */
 // basic for susy
 $total-columns  : 12;
-$columns				: 12;
+$columns        : 12;
 $column-width   : 60px;
 $gutter-width   : 20px;
 $grid-padding   : 10px;
@@ -14,10 +14,10 @@ $grid-padding   : 10px;
 
 // Column Widths
 @mixin grid($i) {
-	width: $column-width * $i + $gutter-width * ($i - 1);
+  width: $column-width * $i + $gutter-width * ($i - 1);
 }
 @mixin grid-plus($i, $plus) {
-	width: $column-width * $i + $gutter-width * ($i - 1) + $plus;
+  width: $column-width * $i + $gutter-width * ($i - 1) + $plus;
 }
 @for $i from 1 through $columns {
   .grid-#{$i} { @include grid($i); }
@@ -44,7 +44,7 @@ $grid-padding   : 10px;
   margin: 0 ($gutter-width / 2);
   float: left;
   .ie6 & {
-  	display: inline;
+    display: inline;
   }
  
   @if $i {
@@ -60,7 +60,7 @@ $grid-padding   : 10px;
     margin-left: $margin;
   }
 }
- 
+
 .wrapper {
   @include grid-page;
 }
@@ -73,7 +73,7 @@ $grid-padding   : 10px;
 .column {
   @include grid-column;
 }
- 
+
 // Box
 .box {
   margin-bottom: $gutter-width;

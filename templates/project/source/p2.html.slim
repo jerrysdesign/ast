@@ -19,9 +19,17 @@
       h1.title 作物種原館
     .mian
       .tab
-      .tabcontent
-        .col5
-          - 5.times do
-            a.box href="javascript;;"
-              img src="http://placehold.it/400x300"
-              h3 = zh_lorem_name
+        ul.tab_head
+          li.active rel="tabCon_01" 糧食作物
+          li rel="tabCon_02" 果樹
+          li rel="tabCon_03" 蔬菜
+          li rel="tabCon_04" 要用作物
+        .tab_container
+          #tabCon_01.tab_content
+            - 10.times do
+              a.box href="javascript;;"
+                img src="http://placehold.it/400x300"
+                h3 = zh_lorem_name
+          #tabCon_02.tab_content
+          #tabCon_03.tab_content
+          #tabCon_04.tab_content

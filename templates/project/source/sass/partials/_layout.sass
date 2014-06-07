@@ -41,3 +41,16 @@
     +span-columns(3)
     &:last-child
       margin-right: 0
+/* p2 */
+.p2
+  .tab_head
+    li
+      +span-columns(3)
+      &:last-child
+        margin-right: 0
+  .box
+    $gutter-width: 6px
+    $total-columns: 10
+    +span-columns(2)
+    &:nth-child(3n)
+      margin-right: 0

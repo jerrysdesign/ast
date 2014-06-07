@@ -1,0 +1,53 @@
+/*! Page 2 */
+.p2
+  .page_header
+    clear: both
+    padding: 10px 0 30px
+    .title
+      @extend %ir
+      background-image: url(../images/p2_title.png)
+      +size(179px 42px)
+      margin-top: -20px
+  .tab
+    .tab_head
+      height: 31px
+      margin-top: 0
+      border-bottom: none
+      li
+        padding: 0
+        float: left
+        height: 31px
+        line-height: 31px
+        cursor: pointer
+        overflow: hidden
+        +border-radius(10px 10px 0 0)
+        border: solid 1px darken($pineGlade, 5%)
+        +background-image(linear-gradient(to top, darken($pineGlade, 5%), $pineGlade))
+        text-align: center
+        &:hover, &.active
+          color: $tabHeaderActive
+          background: #fff
+          border-bottom-color: #fff 
+        &.active
+          display: block
+      li:first-child
+        margin-left: 0
+    .tab_container
+      width: 100%
+    .tab_content
+      background: #fff
+      padding: 10px
+      overflow: hidden
+      border: 1px solid $pineGlade
+      border-top: none
+  a.box
+    background: #fff
+    padding: 8px
+    text-decoration: none
+    @extend %hoverbox
+    h3
+      text-align: center
+      font-size: 15px
+      color: nth($linkColor,2)
+      text-weight: bold
+      padding: 3px
