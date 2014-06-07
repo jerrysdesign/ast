@@ -54,7 +54,7 @@
     +span-columns(2)
     &:nth-child(5n)
       margin-right: 0
-/* p2 */
+/* p4 */
 .p4
   .left-col
     $total-columns: 10
@@ -69,3 +69,13 @@
     +span-columns(2)
     &:nth-child(4n)
       margin-right: 0
+
+/* p6 */
+.p6
+  .left-col
+    $gutter-width: 15px
+    $total-columns: 15
+    +span-columns(7)
+  .right-col
+    +span-columns(8)
+    margin-right: 0
