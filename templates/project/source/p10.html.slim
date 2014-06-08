@@ -1,0 +1,40 @@
+/! 主選單
+.nav
+  .main_menu
+    ul
+      / -(1..7).each do |n|
+      /   li class="menu_0#{n}": a href="javascript:;" 0#{n}
+      = nav_link_to("關於我們", "javascript:;",:class => "menu_01")
+      = nav_link_to("最新消息", "javascript:;",:class => "menu_02")
+      = nav_link_to("作物種原", "p1.html",:class => "menu_03")
+      = nav_link_to("昆從標本", "p3",:class => "menu_04")
+      = nav_link_to("研究成果", "p7.html",:class => "menu_05")
+      = nav_link_to("生活百科", "javascript:;",:class => "menu_06")
+      = nav_link_to("整合查詢", "p10.html",:class => "menu_07 active")
+/! /.nav
+.wrapper
+  .container.p10
+    .main
+      .section.seach_block
+        h3.title_03
+        .inner
+          .tab
+            ul.tab_head
+              li.active rel="tabSearch"  簡易查詢
+              li rel="tabAdvSearch"  進階查詢
+            .tab_container
+              #tabSearch.tab_content
+                = render "partials/index_search"
+              #tabAdvSearch.tab_content
+                /! 進階查詢
+      .row
+        table.libbr.table_05
+          tr
+            th scope="col"  題名
+            th scope="col"  作者
+          -9.times do
+            tr
+              td
+                a href="javascript:;" =zh_lorem_sentences 1 
+              td
+                a href="javascript:;" =zh_lorem_name
