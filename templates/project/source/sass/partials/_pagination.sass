@@ -1,28 +1,26 @@
 .pagination
   text-align: center
-  float: right
   ul, li
     list-style: none
   li
-    float: left
+    display: inline
   a
     +size(18px 24px)
     text-decoration: underline
     font-size: 11px
     line-height: 24px
-    &:hover
+    height: 24px
     display: inline-block
     text-align: center
     cursor: pointer
     coloer: nth($linkColor,1)
-    display: block
   .current
     font-weight: bold
     color: #000
     text-decoration: none
-
-  .pagination-first, .pagination-prev, .pagination-next, .pagination-last
+  .pagination-first, .pagination-prev, .pagination-next, .pagination-last, .page
     +size(24px)
+    text-indent: -9999px
 //CSS Sprite
 @import "compass/utilities/sprites"
 @import "pagination/*.png"
