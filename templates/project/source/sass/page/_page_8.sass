@@ -14,14 +14,21 @@
   .row
     h1
       background-image: url(../images/libbr_icon.png)
+      background-position: 10px center
       background-repeat: no-repeat
       padding-left: 30px
       color: #4c290a
       font-weight: bold
+.libbr
+  margin: 10px 0
 .table_03
   background: #fff
   color: #333
   width: 100%
+  a
+    color: #333
+    text-decoration: none
+    display: block
   th, td
     padding: 2px 5px
     border: 1px solid nth($table03, 2)
@@ -30,6 +37,7 @@
     text-align: right
     background: nth($table03, 3)
     color: nth($table03, 1)
+    text-align: center
   tr:hover
     th
       background: nth($table03, 4)

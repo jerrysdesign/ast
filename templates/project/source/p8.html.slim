@@ -51,8 +51,10 @@
             th scope="col"  作者
           -9.times do
             tr
-              td =zh_lorem_sentences 1 
-              td =zh_lorem_name
+              td
+                a href="javascript:;" =zh_lorem_sentences 1 
+              td
+                =zh_lorem_name
         .row
           .pagination
             = render "partials/search_pagination"
