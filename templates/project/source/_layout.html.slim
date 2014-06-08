@@ -1,11 +1,25 @@
-doctype 5
-html lang="zh-TW"
-  head
-    = render "layout_head"
-    = render "layout_og"
-  body
-  	= render "layout_header"
-    = yield
-    = render "layout_footer"
-    = render "layout_foot"
-    = render "layout_livereload"
+doctype html
+/[if lt IE 7]
+  | <html class="no-js lt-ie9 lt-ie8 lt-ie7"> 
+/[if IE 7]
+  | <html class="no-js lt-ie9 lt-ie8"> 
+/[if IE 8]
+  | <html class="no-js lt-ie9"> 
+| <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+head
+  = render "layout_head"
+  = render "layout_og"
+body
+  /[if lt IE 9]
+    p.chromeframe
+      | 您正在使用的瀏覽器早已 
+      strong 老舊過時 
+      a href="http://browsehappy.com/"
+      | 請立即更新您的瀏覽器
+      | 或 
+      a href="http://www.google.com.tw/intl/zh-TW/chrome/browser/" 使用 Google Chrome
+      | 以增進您的體驗
+  = render "layout_header"
+  = yield
+  = render "layout_footer"
+  = render "layout_foot"

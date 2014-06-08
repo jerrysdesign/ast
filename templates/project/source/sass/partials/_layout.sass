@@ -5,14 +5,18 @@
   background: url(../images/header_bg.png)
   height: 130px
   position: relative
+.container
+  > .main
+    padding: 30px 0
 .main
-  padding: 30px 0
   +pie-clearfix
   /* index_layout */
   .left_block
     +span-columns(6)
   .right_block
     +span-columns(6 omega)
+.page_header + .main, .row + .main
+  padding: 0
 .footer
   background: url(../images/footer_bg.png) bottom center no-repeat
   height: 98px
@@ -38,21 +42,24 @@
   .box
     $gutter-width: 6px
     +span-columns(3)
-    &:last-child
-      margin-right: 0
+    +nth-omega(4n)
+    // &:last-child
+    //   margin-right: 0
 /* p2, p3 */
 .p2, .p3, .p5
   .tab_head
     li
       +span-columns(3)
-      &:last-child
-        margin-right: 0
+      +nth-omega(4n)
+      // &:last-child
+      //   margin-right: 0
   .box
     $gutter-width: 6px
     $total-columns: 10
     +span-columns(2)
-    &:nth-child(5n)
-      margin-right: 0
+    +nth-omega(5n)
+    // &:nth-child(5n)
+    //   margin-right: 0
 /* p4 */
 .p4
   .left-col
@@ -61,13 +68,15 @@
     +span-columns(2)
   .right-col
     +span-columns(8)
-    margin-right: 0
+    +omega
+    // margin-right: 0
   .box
     $gutter-width: 5px
     $total-columns: 8
     +span-columns(2)
-    &:nth-child(4n)
-      margin-right: 0
+    +nth-omega(4n)
+    // &:nth-child(4n)
+    //   margin-right: 0
 /* p6 */
 .p6
   .left-col
@@ -76,7 +85,8 @@
     +span-columns(7)
   .right-col
     +span-columns(8)
-    margin-right: 0
+    +omega
+    //margin-right: 0
 /* p7 & p8 */
 .p7, .p8
   .page_header

@@ -25,3 +25,18 @@ $(document).ready(function() {
     }
   });
 });
+
+/* IE8 */
+$(document).ready(function() {
+  $(".p1 .box:last-child").css({ marginRight: "0px" });
+  $(".p2 .box:nth-child(5n)").css({ marginRight: "0px" });
+  $(".p3 .box:nth-child(5n)").css({ marginRight: "0px" });
+  $(".p5 .box:nth-child(5n)").css({ marginRight: "0px" });
+  $(".p4 .right-col").css({ marginRight: "0px" });
+  $(".p4 .box:nth-child(4n)").css({ marginRight: "0px" });
+  $(".p6 .right-col").css({ marginRight: "0px" });
+  $(".p7 .right-col").css({ marginRight: "0px" });
+  $(".p8 .right-col").css({ marginRight: "0px" });
+  $(".tab_head li:last-child").css({ marginRight: "0px" });
+});
+

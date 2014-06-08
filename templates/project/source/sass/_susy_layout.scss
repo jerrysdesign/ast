@@ -65,7 +65,6 @@ $grid-padding   : 10px;
   @include grid-page;
 }
 .row {
-  @include grid-row;
   @include clearfix;
 }
 .container > .row {
