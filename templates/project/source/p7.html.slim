@@ -1,0 +1,92 @@
+/! 主選單
+.nav
+  .main_menu
+    ul
+      / -(1..7).each do |n|
+      /   li class="menu_0#{n}": a href="javascript:;" 0#{n}
+      = nav_link_to("關於我們", "javascript:;",:class => "menu_01")
+      = nav_link_to("最新消息", "javascript:;",:class => "menu_02")
+      = nav_link_to("作物種原", "p1.html",:class => "menu_03")
+      = nav_link_to("昆從標本", "p3",:class => "menu_04")
+      = nav_link_to("研究成果", "p7.html",:class => "menu_05 active")
+      = nav_link_to("生活百科", "javascript:;",:class => "menu_06")
+      = nav_link_to("整合查詢", "javascript:;",:class => "menu_07")
+/! /.nav
+.wrapper
+  = render  "partials/page_mainsearch"
+  .container.p7
+    .page_header
+      h1.title 作物種原館
+      p 此處需要一段文字簡介作物種原館，可將重點放在本館資料的收藏來源，或其他特色說明。此處需要一段文字簡介作物種原館，可將重點放在本館資料的收藏來源，或其他特色說明。此處需要一段文字簡介作物種原館，可將重點放在本館資料的收藏來源，或其他特色說明。
+    .mian
+      / .left-col
+      /   h3 卷期瀏覽
+      /   ul
+      /     li
+      /       | 台灣農業研究
+      /       ul
+      /         li
+      /          | 2013 年第 63 卷
+      /         li
+      /           | 2013 年第 62 卷
+      /           ul
+      /             li: a href="javascript:;" 第 1 期
+      /             li: a href="javascript:;" 第 2 期
+      /             li: a href="javascript:;" 第 3 期
+      /             li: a href="javascript:;" 第 4 期
+      /     li
+      /      | 技術研究季刊
+      /     li
+      /      | 農業試驗所特刊
+      .left-col
+        h2.content_title 卷期瀏覽
+        .collapse
+          h3 台灣農業研究
+          .block
+            ul
+              li
+               | 2013 年第 63 卷
+              li
+                | 2013 年第 62 卷
+                ul
+                  li: a href="javascript:;" 第 1 期
+                  li: a href="javascript:;" 第 2 期
+                  li: a href="javascript:;" 第 3 期
+                  li: a href="javascript:;" 第 4 期
+          h3 技術研究季刊
+          .block
+            ul
+              li
+               | 2013 年第 63 卷
+              li
+                | 2013 年第 62 卷
+                ul
+                  li: a href="javascript:;" 第 1 期
+                  li: a href="javascript:;" 第 2 期
+                  li: a href="javascript:;" 第 3 期
+                  li: a href="javascript:;" 第 4 期
+          h3 農業試驗所特刊
+          .block
+            ul
+              li
+               | 2013 年第 63 卷
+              li
+                | 2013 年第 62 卷
+                ul
+                  li: a href="javascript:;" 第 1 期
+                  li: a href="javascript:;" 第 2 期
+                  li: a href="javascript:;" 第 3 期
+                  li: a href="javascript:;" 第 4 期
+      .right-col
+        h3.content_title 最新刊登
+        .newlib
+          ul
+            -5.times do
+              li
+                .summary
+                  = zh_lorem_sentences 1
+                .source
+                  = zh_lorem_name
+                .date
+                  = lorem_date
+
