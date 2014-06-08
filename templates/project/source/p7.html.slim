@@ -40,51 +40,15 @@
       /      | 農業試驗所特刊
       .left-col
         h2.content_title 卷期瀏覽
-        .collapse
-          h3 台灣農業研究
-          .block
-            ul
-              li
-               | 2013 年第 63 卷
-              li
-                | 2013 年第 62 卷
-                ul
-                  li: a href="javascript:;" 第 1 期
-                  li: a href="javascript:;" 第 2 期
-                  li: a href="javascript:;" 第 3 期
-                  li: a href="javascript:;" 第 4 期
-          h3 技術研究季刊
-          .block
-            ul
-              li
-               | 2013 年第 63 卷
-              li
-                | 2013 年第 62 卷
-                ul
-                  li: a href="javascript:;" 第 1 期
-                  li: a href="javascript:;" 第 2 期
-                  li: a href="javascript:;" 第 3 期
-                  li: a href="javascript:;" 第 4 期
-          h3 農業試驗所特刊
-          .block
-            ul
-              li
-               | 2013 年第 63 卷
-              li
-                | 2013 年第 62 卷
-                ul
-                  li: a href="javascript:;" 第 1 期
-                  li: a href="javascript:;" 第 2 期
-                  li: a href="javascript:;" 第 3 期
-                  li: a href="javascript:;" 第 4 期
+        = render "partials/collapse"
       .right-col
         h3.content_title 最新刊登
         .newlib
           ul
-            -5.times do
+            -10.times do
               li
                 .summary
-                  = zh_lorem_sentences 1
+                  = zh_lorem_words 35
                 .source
                   = zh_lorem_name
                 .date
