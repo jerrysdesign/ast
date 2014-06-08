@@ -1,0 +1,51 @@
+/! 主選單
+.nav
+  .main_menu
+    ul
+      / -(1..7).each do |n|
+      /   li class="menu_0#{n}": a href="javascript:;" 0#{n}
+      = nav_link_to("關於我們", "javascript:;",:class => "menu_01")
+      = nav_link_to("最新消息", "javascript:;",:class => "menu_02")
+      = nav_link_to("作物種原", "p1.html",:class => "menu_03")
+      = nav_link_to("昆從標本", "p3",:class => "menu_04")
+      = nav_link_to("研究成果", "p7.html",:class => "menu_05 active")
+      = nav_link_to("生活百科", "javascript:;",:class => "menu_06")
+      = nav_link_to("整合查詢", "javascript:;",:class => "menu_07")
+/! /.nav
+.wrapper
+  = render  "partials/page_mainsearch"
+  .container.p9
+    .page_header
+      ul.breadcrumb
+        li: h1.title 研究成果典藏
+        li 卷期瀏覽
+    .mian
+
+      .row
+        h1 台灣農業研究／ 2012年第62卷第1期
+      table.libbr.table_04
+        -10.times do
+          tr
+            th scope="row"  欄位名稱
+            td = zh_lorem_sentences 3 
+      
+      .row.p6
+        .tab
+          ul.tab_head
+            li.active rel="tabA"
+              img src="images/p6_tab_01.png" alt="相關作物"
+            li rel="tabB"
+              img src="images/p6_tab_02.png" alt="相關昆蟲"
+            li rel="tabC"
+              img src="images/p6_tab_03.png" alt="相關文獻"
+          .tab_container
+            #tabA.tab_content
+              ol
+                li: a href="javascript:;" = zh_lorem_sentences 2
+                li: a href="javascript:;" = zh_lorem_sentences 2
+                li: a href="javascript:;" = zh_lorem_sentences 2
+                li: a href="javascript:;" = zh_lorem_sentences 2
+            #tabB.tab_content
+              /! 相關昆蟲
+            #tabB.tab_content
+              /! 相關文獻
